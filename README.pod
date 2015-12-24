@@ -14,7 +14,8 @@ Random things that come to mind though:
 
 =item * this Test::Class is a role that you can compose into your own classes
 
-=item * Instead of running Test::Class->runtests, you execute YourClass.run-tests
+=item * Instead of running Test::Class.run-tests, you execute YourClass.run-tests
+or Test::Class.run-tests(YourClass)
 
 =item * where in P5 you'd say "sub foo : Test", here you'd say "method foo is test"
 
