@@ -24,7 +24,7 @@ role Test::Class is export {
         for @objs -> $o is copy {
             $o = $o.new unless $o.DEFINITE;
             my @meths = $o.^methods;
-            my @counts = @meths.grep({ (.?test-type // '') eq 'Test' || .?test-count ~~ Int })
+            my @counts = @meths.grep({ (.?test-type // '') eq 'Test' || .?test-count !~~ Bool })
                                .map({ .?test-count // 0 });
             plan any(@counts) ~~ Whatever ?? * !! [+] @counts;
             my %h = @meths.classify({ .?test-type // '' });
