@@ -1,13 +1,27 @@
-{ 
-    "perl" : "6.*",
-    "name" : "Test::Class", 
-    "version" : "*", 
-    "description" : "Simple Test::Class similar to Perl's", 
-    "depends" : [ ], 
-    "provides" : { 
-        "Test::Class"    : "lib/Test/Class.pm6"
-    },
-    "repo-type" : "git",
-    "source-url" : "git://github.com/raku-community-modules/Test-Class.git"
+{
+  "auth": "zef:raku-community-modules",
+  "authors": [
+    "Jonathan Scotff Duff",
+    "Raku Community"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "Raku version of Perl's Test::Class",
+  "license": "Artistic-2.0",
+  "name": "Test::Class",
+  "perl": "6.*",
+  "provides": {
+    "Test::Class": "lib/Test/Class.rakumod"
+  },
+  "repo-type": "git",
+  "resources": [
+  ],
+  "source-url": "git://github.com/raku-community-modules/Test-Class.git",
+  "tags": [
+  ],
+  "test-depends": [
+  ],
+  "version": "1.0"
 }
-

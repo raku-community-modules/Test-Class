@@ -1,0 +1,7 @@
+Revision history for Test::Class
+
+{{$NEXT}}
+    - First version on the zef ecosystem
+    - Sadly, this module appears to be very much a work in
+      progress and as such still very much incomplete and
+      basically not tested.

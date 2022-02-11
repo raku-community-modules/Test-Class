@@ -1,11 +1,10 @@
-#!/usr/bin/env perl6
-
-use Test;
 use Test::Class;
+
+plan 2;
 
 class Foo does Test::Class { }
 
 isa-ok(Foo.new, Foo);
 does-ok(Foo.new, Test::Class);
 
-done-testing;
+# vim: expandtab shiftwidth=4
